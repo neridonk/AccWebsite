@@ -41,10 +41,10 @@ export class ScrollExComponent implements OnInit, AfterViewInit
       navigationPosition: 'right',
       navigationTooltips: ['First page', 'Second page', 'Third and last page'],
 
-      onLeave: function (index, nextIndex, direction)
+      onLeave: function (index: any, nextIndex: any, direction: any)
       {
 
-            // first animation
+        // first animation
         if (index == 1 && nextIndex == 2)
         {
           $isAnimatedSecond.addClass('animated fadeInUpBig');
@@ -54,7 +54,7 @@ export class ScrollExComponent implements OnInit, AfterViewInit
           $isAnimatedSecondSingle.addClass('animated rollIn').css('animation-delay', '1.7s');
         }
 
-         // second animation
+        // second animation
         else if ((index == 1 || index == 2) && nextIndex == 3)
         {
           $isAnimatedThird.eq(0).addClass('animated fadeInRightBig').css('animation-delay', '.3s');
@@ -67,10 +67,8 @@ export class ScrollExComponent implements OnInit, AfterViewInit
         {
           $isAnimatedFourth.addClass('animated zoomIn').css('animation-delay', '.6s');
           $isAnimatedFourthSingle.addClass('animated lightSpeedIn').css('animation-delay', '1.2s');
-          $isAnimatedFourthSingle.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function ()
-          {
-            $(this).removeClass('lightSpeedIn').addClass('zoomOutDown');
-          });
+        }
+      }
 
     });
   }
