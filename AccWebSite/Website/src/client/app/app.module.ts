@@ -7,10 +7,11 @@ import { AppComponent } from './app.component';
 import { routes } from './app.routes';
 
 import { IndexModule } from './index/index.module';
+import { ScrollExModule } from './scrollEx/scrollEx.module';
 import { SharedModule } from './shared/shared.module';
 
 @NgModule({
-  imports: [BrowserModule, HttpModule, RouterModule.forRoot(routes), IndexModule],
+  imports: [BrowserModule, HttpModule, RouterModule.forRoot(routes), IndexModule, ScrollExModule],
   declarations: [AppComponent],
   providers: [{
     provide: APP_BASE_HREF,
