@@ -1,5 +1,5 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
-declare var jQuery: any;
+declare var $: any;
 /**
  * First lazy Loaded Component
  */
@@ -25,15 +25,15 @@ export class ScrollExComponent implements OnInit, AfterViewInit
   ngAfterViewInit()
   {
 
-    var $isAnimatedSecond = jQuery('.second .is-animated'),
-      $isAnimatedSecondSingle = jQuery('.second .is-animated__single'),
-      $isAnimatedThird = jQuery('.third .is-animated'),
-      $isAnimatedThirdSingle = jQuery('.third .is-animated__single'),
-      $isAnimatedFourth = jQuery('.fourth .is-animated'),
-      $isAnimatedFourthSingle = jQuery('.fourth .is-animated__single');
+    var $isAnimatedSecond = $('.second .is-animated'),
+      $isAnimatedSecondSingle = $('.second .is-animated__single'),
+      $isAnimatedThird = $('.third .is-animated'),
+      $isAnimatedThirdSingle = $('.third .is-animated__single'),
+      $isAnimatedFourth = $('.fourth .is-animated'),
+      $isAnimatedFourthSingle = $('.fourth .is-animated__single');
 
 
-    jQuery('#fullpage').fullpage({
+    $('#fullpage').fullpage({
       anchors: ['firstPage', 'secondPage', '3rdPage'],
       sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
       scrollBar: true,
