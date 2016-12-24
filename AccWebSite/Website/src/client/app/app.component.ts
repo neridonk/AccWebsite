@@ -3,6 +3,7 @@ import { Config } from './shared/index';
 import 'rxjs/add/observable/throw';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
+/// <reference path="../../../node_modules/@types/babylonjs/index.d.ts" />
 
 
 /**
