@@ -1,4 +1,4 @@
-{
+﻿{
   "compilerOptions": {
     "target": "es5",
     "module": "commonjs",
@@ -25,7 +25,8 @@
       "jasmine",
       "node",
       "protractor",
-      "systemjs"
+      "systemjs",
+      "babylonjs"
     ]
   },
   "exclude": [

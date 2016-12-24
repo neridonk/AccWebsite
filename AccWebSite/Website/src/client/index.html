@@ -9,10 +9,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- inject:css -->
   <!-- endinject -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.9/jquery.fullPage.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="css/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.9/jquery.fullPage.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="css/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babylonjs/2.5.0/babylon.max.js"></script>
+
 
 </head>
 <body>
@@ -20,36 +22,33 @@
   <sd-app>Loading...</sd-app>
 
   <script>
-  // Fixes undefined module function in SystemJS bundle
-  function module() {}
+    // Fixes undefined module function in SystemJS bundle
+    function module() { }
   </script>
 
   <!-- shims:js -->
   <!-- endinject -->
-
   <% if (BUILD_TYPE === 'dev') { %>
   <script src="<%= APP_BASE %>app/system-config.js"></script>
   <% } %>
 
   <!-- libs:js -->
   <!-- endinject -->
-
   <!-- inject:js -->
   <!-- endinject -->
-
   <% if (BUILD_TYPE === 'dev') { %>
   <script>
-  System.import('<%= BOOTSTRAP_MODULE %>')
-    .catch(function (e) {
-      console.error(e.stack || e,
-        'Not expecting this error? Report it at https://github.com/mgechev/angular-seed/issues');
-    });
+    System.import('<%= BOOTSTRAP_MODULE %>')
+      .catch(function (e) {
+        console.error(e.stack || e,
+          'Not expecting this error? Report it at https://github.com/mgechev/angular-seed/issues');
+      });
   </script>
   <% } %>
-    <script src="css/parallax.min.js"></script>
+  <script src="css/parallax.min.js"></script>
 
 
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.9/jquery.fullPage.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.9/jquery.fullPage.min.js"></script>
 
 
 </body>

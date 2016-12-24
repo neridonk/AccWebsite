@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewInit } from '@angular/core';
+﻿import { Component, OnInit, AfterViewInit } from '@angular/core';
 declare var $: any;
 /**
  * First lazy Loaded Component

@@ -126,6 +126,8 @@
     "@angular/platform-browser": "~2.2.0",
     "@angular/platform-browser-dynamic": "~2.2.0",
     "@angular/router": "~3.2.0",
+    "@types/babylonjs": "^2.3.31",
+    "@types/three": "0.0.28",
     "bootstrap": "3.3.7",
     "core-js": "^2.4.1",
     "intl": "^1.2.5",
